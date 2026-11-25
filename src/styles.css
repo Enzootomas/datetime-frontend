@@ -1,0 +1,241 @@
+:root {
+  color-scheme: dark;
+  font-family: "Inter", "Segoe UI", Roboto, system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1e293b 0%, #0f172a 65%);
+  color: #f8fafc;
+}
+
+.pagina {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+}
+
+.painel {
+  width: 100%;
+  max-width: 760px;
+  background: rgba(15, 23, 42, 0.88);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 24px 48px rgba(2, 6, 23, 0.45);
+}
+
+.cabecalho {
+  margin-bottom: 24px;
+}
+
+.etiqueta {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.28);
+  border-radius: 999px;
+  padding: 4px 12px;
+  margin-bottom: 12px;
+}
+
+.cabecalho h1 {
+  margin: 0 0 8px;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+}
+
+.cabecalho p {
+  margin: 0;
+  color: #cbd5e1;
+}
+
+code {
+  background: rgba(30, 41, 59, 0.9);
+  padding: 2px 6px;
+  border-radius: 6px;
+  color: #7dd3fc;
+  font-size: 0.9em;
+}
+
+.configuracao {
+  background: rgba(30, 41, 59, 0.55);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 14px;
+  padding: 18px;
+  margin-bottom: 24px;
+}
+
+.configuracao > label {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #e2e8f0;
+  margin-bottom: 8px;
+}
+
+.linha-input {
+  display: flex;
+  gap: 12px;
+}
+
+.linha-input input {
+  flex: 1;
+  padding: 11px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  background: #0f172a;
+  color: #f8fafc;
+  font-size: 0.95rem;
+}
+
+.botao-primario {
+  padding: 11px 20px;
+  border-radius: 10px;
+  border: none;
+  background: #0284c7;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  white-space: nowrap;
+}
+
+.botao-primario:hover:not(:disabled) {
+  background: #0369a1;
+}
+
+.botao-primario:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+
+.opcoes {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+.checkbox-auto {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: #cbd5e1;
+}
+
+.grade-relogio {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.cartao-valor {
+  background: linear-gradient(160deg, rgba(30, 41, 59, 0.9), rgba(15, 23, 42, 0.95));
+  border: 1px solid rgba(56, 189, 248, 0.22);
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.rotulo-cartao {
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+.valor-destaque {
+  font-size: clamp(1.6rem, 3.5vw, 2.25rem);
+  font-variant-numeric: tabular-nums;
+  color: #f8fafc;
+}
+
+.cartao-valor small {
+  color: #64748b;
+}
+
+.bloco-json {
+  background: #020617;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.topo-json {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  background: rgba(30, 41, 59, 0.6);
+  font-size: 0.82rem;
+  color: #cbd5e1;
+}
+
+.badge-ok {
+  background: rgba(16, 185, 129, 0.16);
+  color: #34d399;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.bloco-json pre {
+  margin: 0;
+  padding: 16px;
+  font-size: 0.9rem;
+  color: #a5f3fc;
+  overflow-x: auto;
+}
+
+.estado-mensagem,
+.estado-erro {
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.estado-mensagem {
+  background: rgba(30, 41, 59, 0.5);
+  color: #cbd5e1;
+}
+
+.estado-erro {
+  background: rgba(239, 68, 68, 0.12);
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  color: #fecaca;
+}
+
+.estado-erro p {
+  margin: 8px 0;
+}
+
+@media (max-width: 640px) {
+  .painel {
+    padding: 20px;
+  }
+
+  .linha-input {
+    flex-direction: column;
+  }
+
+  .grade-relogio {
+    grid-template-columns: 1fr;
+  }
+}
