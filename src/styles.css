@@ -25,12 +25,12 @@ body {
 
 .painel {
   width: 100%;
-  max-width: 760px;
-  background: rgba(15, 23, 42, 0.88);
-  border: 1px solid rgba(148, 163, 184, 0.2);
+  max-width: 780px;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.22);
   border-radius: 20px;
   padding: 32px;
-  box-shadow: 0 24px 48px rgba(2, 6, 23, 0.45);
+  box-shadow: 0 24px 48px rgba(2, 6, 23, 0.5);
 }
 
 .cabecalho {
@@ -76,12 +76,43 @@ code {
   margin-bottom: 24px;
 }
 
-.configuracao > label {
-  display: block;
+.topo-configuracao {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.topo-configuracao label {
   font-size: 0.88rem;
   font-weight: 600;
   color: #e2e8f0;
-  margin-bottom: 8px;
+}
+
+.atalhos-api {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.botao-preset {
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  background: rgba(15, 23, 42, 0.8);
+  color: #cbd5e1;
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.botao-preset:hover,
+.botao-preset.ativo {
+  border-color: #38bdf8;
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.12);
 }
 
 .linha-input {
@@ -168,7 +199,8 @@ code {
 }
 
 .cartao-valor small {
-  color: #64748b;
+  color: #94a3b8;
+  text-transform: capitalize;
 }
 
 .bloco-json {
@@ -188,6 +220,20 @@ code {
   color: #cbd5e1;
 }
 
+.badges-json {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.badge-latencia {
+  background: rgba(56, 189, 248, 0.14);
+  color: #7dd3fc;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
 .badge-ok {
   background: rgba(16, 185, 129, 0.16);
   color: #34d399;
@@ -199,7 +245,7 @@ code {
 .bloco-json pre {
   margin: 0;
   padding: 16px;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   color: #a5f3fc;
   overflow-x: auto;
 }
@@ -209,6 +255,7 @@ code {
   padding: 20px;
   border-radius: 12px;
   text-align: center;
+  margin-bottom: 16px;
 }
 
 .estado-mensagem {
@@ -224,6 +271,18 @@ code {
 
 .estado-erro p {
   margin: 8px 0;
+}
+
+.rodape-painel {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(148, 163, 184, 0.14);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: #64748b;
 }
 
 @media (max-width: 640px) {
