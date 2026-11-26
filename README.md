@@ -2,6 +2,9 @@
 
 Aplicação Front-end responsiva desenvolvida com **React** e **Vite** para consumir a API REST **[datetime-api-express](https://github.com/Enzootomas/datetime-api-express)** (`GET /api/data-hora`), atendendo integralmente à **Atividade 02 da Aula 04 (Consumindo APIs no Front-end)** da disciplina de **Frameworks Front-end** (SENAI).
 
+- **Deploy em Produção (Vercel):** [🌐 Ver online](https://datetime-frontend-rose.vercel.app)
+- **Repositório GitHub:** [🔗 Repositório](https://github.com/Enzootomas/datetime-frontend)
+
 ---
 
 ## 📸 Captura de Tela da Aplicação em Funcionamento
